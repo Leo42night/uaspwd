@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+      #boo {
+        opacity: 0;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        width: 80px;
+        height: 80px;
+      }
+      .click {
+        opacity: 0;
+      }
+  </style>
+</head>
+<body>
+  <nav>
+    <span>
+      <button class="active"><a href="#">Home</a></button>
+      <button><a href="akademik.html">Akademik</a></button>
+      <button><a href="profil.html">Profile</a></button>
+    </span>
+    <button><a href="index.html">Logout</a></button>
+  </nav>
+  <div class="container">
+    <div id="mode">
+      <img src="logo2.png" alt="">
+        <button id="html" onclick="htmlDest()">HTML</button> + 
+        <button id="css" onclick="openCss()">CSS</button> + 
+        <button id="js" onclick="openJs()">JavaScript</button>
+        <button class="click hidesup">Click!</button>
+    </div>
+  <header>
+    <div class="boo bayang hidesup" id="boo">
+      <img src="apostle.png" alt="">
+      <audio controls id="audio" style="opacity: 0">
+        <source src="gasping-zombie.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div>
+      <h2>HTML</h2>
+      <p>HyperText Markup Language. ini bukanlah bahasa pemograman murni, 
+      melainkan sebuah <em>"Markup"</em> language. sederhana nya, <strong>
+      Markup adalah sebuah cetakan data/dokumen berisi konten yang dibungkus dalam tag &lt;HTML&gt;</strong>. kemudian, <em>"HyperText"</em> merujuk pada kemampuan <strong>dokumen yang saling terhubung melalui link dan kecepatannya dalam bergerak</strong>, contohnya tag anchor :<xmp><a href="/">...</a></xmp>Jadi kenapa html tidak disebut bahasa pemograman murni? itu karena HTML hanya men-deklarasikan elemen, <u>tanpa menjalankan logika tertentu</u></p>
+      <h2>CSS</h2>
+      <p>Cascading StyleSheet. StyleSheet secara sederhana berarti <b>Kumpulan Gaya</b> pada element. Cascading memberi struktur gaya mana yang dipakai dulu, gaya apa yang diprioritaskan.</p>
+      <h2>JS</h2>
+      <img src="walk.jpeg" alt="" id="sword" style="height: 90px;">
+      <p>JavaScript. bahasa pemograman pada browser untuk menjalankan interaksi antarmuka. turunannya bisa berjalan di server untuk mengelola protoko HTTP dan manipulasi database</p>
+    </div>
+  </header>
+  <section>
+      <h3>jenis Tag yang penulis pahami (ckp tw):</h3>
+      <p>Ini yang dimaksud elemen dengan turunan(nested) jadi setiap tag memiliki relasi saling bungkus.</p>
+      <ul>
+          <li>Tag Utama : <xmp><!DOCTIPE html> <html> <head> <body> </xmp></li>
+          <li>Tag nested dan descendant : <xmp><HEAD> : <meta> <title> <link></xmp>
+              <xmp><BODY> : <header> <nav> <main> <section> <article> <aside> <footer> </xmp></li>
+          <li>Tag element display: <xmp>Block : <h1..6> <p> <img> (<ol><ul><li>) <form> <xmp></xmp>
+              <xmp>Inline: <a> <u> <em> <strong> <span> <div> <i> <button> <input> <abbr> </xmp></li>
+      </ul>
+      <h3>Hal-Hal <strong>Penting</strong> dalam tema HTML (bagi penulis sekarang)</h3>
+          <ol>
+              <li><h4>Struktur turunan Html Tree model</h4></li>
+              <p>seperti yang ditampilkan di atas. setiap tag memiliki hubungan ayah anak atau kakek cucu. contohnya ol dan li. namun yang menjadi masalah adalah tag yang tidak ada aturan pasti struktur turunanya, seperti div dsb.</p>
+              <li><h4>Penggunaan tag yang bermakna (format semantic)</h4></li>
+              <p>contoh : i dan em, bold dan strong, div dan span, section dan artikel. Hal ini untuk meningkatkan SEO web kedepannya</p>
+              <li><h4>Block dan Inline</h4></li>
+              <p>tag Block memenuhi lebar layar, jadi tidak akan ada tag tipe block yang satu baris dengan tag lain. sebaliknya, tag inline hanya mengikuti lebar isian nya, selebihnya bisa diisi tag lain. tidak terlalu sulit</p>
+              <li><h4>Tag Atribut</h4></li>
+              <p>beberapa tag memiliki atribut bawaan dan tag tambahan seperti style="" untuk CSS</p>
+              <li><h4>Posisi Main, Aside, Section dan Article</h4></li>
+              <p>merujuk pada content utama dalam halaman. Pengaturannya akan cukup membingungkan, karena tidak mengikuti aturan absolute yang ada pada header, nav, dan footer</p>
+              <li><h4>Responsive Web</h4></li>
+              <p>pada layar berbeda, seperti smartphone. tapi itu pembahasan CSS</p>
+              <li><h4>Pembungkusan dari section dan Div</h4></li>
+              <p>tujuannya agar konten didalamnya dapat di edit secara berkelompok.</p>
+          </ol>
+  </section>
+  <section>
+    <h3>Konsep CSS  yang krusial :</h3>
+    <ul>
+      <li>Property Style dan relasi antar propertinya</li>
+      <p>contoh : display menjadi pembuka untuk flex dan grid. variasi position membuat item inline bisa memiliki modifikasi block (inline-block)</p>
+      <li>Style default dari tag</li>
+      <li>Modifikasi inherit dari tag parent bisa diikuti turunanya</li>
+    </ul>
+
+    <h3>Konsep dan Elemen CSS (yang penulis pahami):</h3>
+    <ul>
+      <li>Padding, Border, Margin</li>
+      <li>text dan font styles</li>
+      <li>display dan position</li>
+      <li>List Style</li>
+      <li>Parallax</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Materi JS dan setelahnya yang perlu diperdalam lagi (cara dan tujuannya)</h3>
+    <ol>
+      <li>Synchronous & Asynchronous</li>
+      <li><b>DOM</b> object, event Listener, dan animation</li>
+      <p>menjalankan fungsi CRUD, melakukan event handler, dan menghubungkan interaksi antar element</p>
+      <li>Modern Javascript (ES6)</li>
+      <p>Pengolahan data object, parameter rest dan spread. callback promise</p>
+      <li>Generate function "yield" logic</li>
+      <p>gen function next() memiliki perilaku <b>Pointer</b> pada setiap yield. perilaku yield juga seperti return. yield bertambah setiap dipanggil</p>
+      <li>GIT & CLI (Command Line Interface)</li>
+      <li>Package Manager (Node & NPM)</li>
+    </ol>
+  </section>
+
+  <footer>
+    <h2>Tentang Halaman</h2>
+    <p>Dibuat menggunakan CSS dan Javascript manual<br>Ditulis oleh <a href="https://www.linkedin.com/in/leoptobing" target="_blank" rel="noopener noreferrer">Leo Prangs T.</a> <a href="https://github.com/Leo42night/" target="_blank" rel="noopener noreferrer"><img src="github.jpg" alt="" width=30px></a></p>
+  </footer>
+</div>
+<script type="text/javascript">
+        let isCssAda = false;
+        let isJsAda = false;
+        
+        let link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "styleHome.css";
+
+        let script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "scriptHome.js";
+        script.id = "dom";
+        
+        let css = document.getElementById("css");
+        let js = document.getElementById("js");
+        let aktif = "font-weight:900; text-decoration:underline;";
+        document.getElementById("html").style = aktif;
+
+        function htmlDest(){
+            if (isCssAda){
+                document.querySelector("head").removeChild(link);
+                css.style = " ";
+                isCssAda = false;
+            }
+            if (isJsAda){
+                document.querySelector("body").removeChild(script);
+                js.style = " ";
+                isJsAda = false;
+            }
+        }
+        
+        function openCss(){
+          if (!isCssAda){
+              document.querySelector("head").appendChild(link);
+              css.style = aktif;
+              isCssAda = true;
+          }
+          if (isJsAda){
+              scr = document.getElementById("dom");
+              scr.parentNode.removeChild(scr);
+              js.style = " ";
+              isJsAda = false;
+
+          }
+        }
+
+        function openJs(){
+            if (!isCssAda){
+                document.querySelector("head").appendChild(link);
+                css.style = aktif;
+                isCssAda = true;
+            }
+            if (!isJsAda){
+                document.querySelector("body").appendChild(script);
+                js.style = aktif;
+                isJsAda = true;
+            }
+        }
+        document.querySelectorAll("bayang").style.color="blue";
+</script>
+</body>
+</html>

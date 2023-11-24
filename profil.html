@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styleHome.css">
+	<title>Profil</title>
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+		.container {
+		  padding:0 1vw;
+		  margin:0;
+		  background-color:#17141d;
+		  color:white;
+		  font-family:'DM Mono', monospace;
+		}
+		.card-list{
+		  display:flex;
+		}
+		.card{
+		  display:flex;
+		  position:relative;
+		  flex-direction:column;
+		  height: 350px;
+		  width: 400px;
+		  min-width:250px;
+		  padding: 1.5rem;
+		  
+		  border-radius:16px;
+		  background: #17141d;
+		  box-shadow: -1rem 0 3rem #000;
+		  transition: .2s;
+		}
+		.card:hover{
+		  transform:translateY(-1rem);
+		}
+		.card:hover~.card{
+		  transform:translateX(130px)
+		}
+		card:not(:first-child){
+		  margin-left:-130px;
+		}
+		footer{position:fixed;bottom:0;height:50px; width:100%;background-color:#040B23;padding-left:30px;}
+  </style>
+</head>
+<body>
+  <nav>
+    <span>
+      <button><a href="home.html">Home</a></button>
+      <button><a href="akademik.html">Akademik</a></button>
+      <button class="active"><a href="#">Profile</a></button>
+    </span>
+    <button><a href="index.html">Logout</a></button>
+  </nav>
+	<div class="container">
+		<header><H1>Biodata Diri</H1></header>
+		<section class="card-list">
+  		<article class="card">
+ 				<img src="leo.jpg" alt="">
+  		</article>
+		  <article class="card">
+		    <p>Halo, saya adalah seorang junior web developer.
+		    </p><p>
+		    Saya mempelajari tentang teknologi terutama seputar <i>web developing</i>,</p><p>
+		    Sat ini saya ingin membagikan sedikit ilmu yang saya miliki.</p>  
+		  </article>
+	  <article class="card">
+	    <table>
+	      <tr>
+	        <td><b>Nama</b>
+	          <p>Leo Prangs Tobing</p>
+	        </td>
+	      </tr>
+	      <tr>
+          <td> <b>Tempat, Tanggal Lahir </b>
+            <p>Batu Pahat, 2 Mei 2004</p>
+          </td>
+      	</tr>
+      	<tr>
+          <td><b>Hobby</b>
+            <p>Coding</p>
+          </td>
+      	</tr>
+	    </table>
+		</article>  
+  <article class="card">
+<p><strong>Makanan Kesukaan</strong></p>
+    <ul>
+        <li> Mie Ayam</li>
+        <li> Sushi</li>
+        <li> Hamburger</li>
+        <li> Sate</li>
+    </ul>
+</article>
+</section>
+</div>
+<footer><p>Dibuat Dengan Semangat &#128512; | Desember, 2023</p></footer>
+</body>
+</html>
